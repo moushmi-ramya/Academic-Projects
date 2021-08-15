@@ -1,0 +1,124 @@
+
+<html>
+<head>
+	<title>Children Happiness</title>
+	<link rel="stylesheet" href="style.css?version=51">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width =device-width, intial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+	<section id="banner">
+		<img src="Children%20Happiness.png" class="logo">
+        <div class="banner-text">
+        <h1>Children Happiness </h1>
+            
+            <div class="banner-btn">
+            <a href="#about"><span></span>Read More</a>
+            <a href="RegForm.html"><span></span>Sign Up</a>
+                
+            
+            </div>
+        </div>
+	</section>
+    <div id="sideNav">
+    <nav>
+        <ul>
+        <li><a href="index.html"> HOME</a></li>
+        <li><a href="#about"> ABOUT</a></li>
+        <li><a href="#footer"> CONTACT</a></li>
+        <li><a href="RegForm.html"> REGISTER / LOGIN</a></li>
+        
+        
+        </ul>
+        </nav>
+    
+    </div>
+<div id="menuBtn">
+    <img src="menuBtn.png" id="menu">
+    </div>
+    
+    <!--About-->
+    
+    <section id ="about">
+    <div class="title-text">
+    <p>ABOUT</p>
+    <h1>Why Choose Us?</h1>
+        </div>
+        <div class="about-box">
+        <div class="about">
+        <h1>Experienced Staff</h1> 
+        <div class="about-desc">
+            
+            <div class="about-text">
+            <p>As we all know that Psychology is a scientific study of behavior and mental processes.
+Our main focus is on school children,
+We at Smile Aid are here to help you continuously monitor and assess the happiness and psychological well- being of the school children.
+ 
+Owing to the amount of time that a student spends in school every day and over a period of years,
+schools and school personnel play an important role in preventing and recognising their students emotional problems. 
+The focus of the schools should shift from academic achievement to ensuring the emotional and mental well-being of children. 
+Only when a child is emotionally secure and content, they can give their best. 
+
+We have an online system that is enabled with the structured questionnaire, which helps identify the potential candidates/ students, 
+who are undergoing psychological pressure.This way, they could be identified at early stages.</p>
+            
+            </div>
+            
+        </div>
+        </div>
+        <div class="about-img">
+        <img src ="ca.jpg">
+        </div>
+        
+        </div>
+    </section>
+    
+    <!--footer-->
+    <section id ="footer">
+    <div class="title-text">
+    <p>CONTACT</p>
+    </div>
+    <div class="footer-row">
+    <div class="footer-left">
+    <h1>Opening Hours</h1>
+        <p><i class="fa fa-clock-o"></i>Monday To Friday - 9am to 5pm</p>
+        <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 9am to 1pm</p>
+    </div>
+    <div class="footer-right">
+    <h1>Get in Touch</h1>
+        <p>#30 abc Colony, xyz City INDIA<i class="fa fa-map-marker"></i></p>
+        <p>example@gmail.com<i class="fa fa-paper-plane"></i></p>
+        <p>+91 2222222222<i class="fa fa-phone"></i></p>
+    </div>
+    </div>
+    
+    
+    
+    </section>
+    <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src="close.png";
+        }
+        
+        else{
+            sideNav.style.right = "-250px";
+            menu.src="menuBtn.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+    </script>
+
+</body>
+</html>

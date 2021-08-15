@@ -1,0 +1,96 @@
+<html>
+<style>
+body {
+  background-image: url('wallpaper6.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+h1{
+	color:#e01616;
+	font-family:cursive;
+	
+}
+h3{
+	color:#e31445;
+	font-family:Garamond;
+	font-weight: bold;
+}
+p{
+ font-size:25px;
+ color:#153cd6;
+ font-weight: bold;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+</style>
+
+<body>
+<h1 align="center"> HARD ROCK - Designed For Natural Living</h1>
+	
+
+<div class="Slid">
+  <img src="hotel.jpg" style="width:100%">
+</div>
+
+<div class="Slid">
+  <img src="deluxe.jpg" style="width:100%">
+</div>
+
+<div class="Slid">
+  <img src="luxury.jpg" style="width:100%">
+</div>
+<div class="Slid">
+  <img src="executive.jpg" style="width:100%">
+</div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>  
+</div>
+<img src="ficon.jpg" width="100" height="100">
+<h3>Best food Ever</h3>
+<p>"Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious."</p>
+<img src="picon.jpg" width="100" height="100">
+<h3>24x7 phone support</h3>
+<p>"9866622288"</p>
+<img src="aicon.png" width="100" height="100">		
+<h3>Best Room Services</h3>
+<p>"Our hotel rooms are the perfect place to chill out and prepare for the excitement that awaits you."</p>
+						
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("Slid");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+</body>
+</html>

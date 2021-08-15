@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Add Student Details</title>
+</head>
+<style>
+.button {
+  display: center;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff1c20;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+    margin-left: 600px;
+}
+.button:hover {
+  background-color: #f04dda
+}
+.button:active {
+  background-color: #f04dda;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
+       
+form {
+ margin:20px;
+ padding: 20px 30px;
+ border: 10px solid #f04dda;
+}
+input[type=text],input[type=number],input[type=radio],input[type=password] {
+  border: 2px solid #acde16;
+  border-radius: 4px;
+}
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #acde16;
+  border-radius: 4px;
+  
+}
+</style>
+<body bgcolor="#87fad9">
+ 
+<form action="connect1.php" method="post">
+  <div style="padding-bottom: 18px;font-size : 50px;color:#ff1c20;"><center>Add Student Details</center></div>
+  <div style="font-size:30px;">
+  <div style="display:flex;padding-bottom: 18px;color:#251aed">
+  <div style=" margin-left :10%; margin-right :10%; width :25%;">Name:<br/>
+         <input type="text" id="name" name="name" required style="width: 100%;">
+  </div><br>
+
+  </div>
+  <div style="margin-left :10%; margin-right :10%;padding-bottom: 18px;color:#251aed">Class<br/>
+         <input type="number" id="class" name="class" required style="width : 450px;">
+  </div>
+  <div style="margin-left :10%; margin-right :10%;padding-bottom: 18px;color:#251aed">Age<br/>
+         <input type="number" id="class" name="age" required style="width : 450px;">
+  </div>
+      <div style="margin-left :10%; margin-right :10%;padding-bottom: 18px;color:#251aed">Student Id<br/>
+         <input type="text" id="sid" name="sid" required style="width : 450px;">
+  </div>
+  <div style="margin-left :10%; margin-right :10%;padding-bottom: 18px;color:#251aed">Select your Gender: <br> <input type="radio" name="gender"  value="m">
+						Male<input type="radio" name="gender"  value="f">
+						Female
+  </div>
+  <button type="submit" name="submit" class="button" >Register</button>
+    </div>
+</form>
+</body>
+</html>
